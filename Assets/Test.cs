@@ -23,7 +23,7 @@ public class Boss {
 		int mpCount = 5;
 
 		//もしMPが５以上余っていたら魔法攻撃を行う
-		if(this.mp > 5){
+		if(this.mp >= 5){
 			//MPを５消費する
 			this.mp = this.mp - mpCount;
 			Debug.Log( "魔法攻撃をした。残りMPは" + this.mp );
